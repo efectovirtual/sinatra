@@ -1,14 +1,20 @@
 require 'sinatra'
 
+a = []
+
 get '/' do
-	"Hola desconocido!"
+	a = params[:nombre]
+	if a
+		"<h3>Hola #{a}</h1>"
+	else
+		"Hola desconocido!"
+	end	
+
+	erb :saludo3
+
 end
 
-get '/:makers/' do
-	"Hola desconocido!"
-end
 
-
-get '/:makers/:nombre' do
-	"<h1>Hola #{params[:nombre].capitalize}!</h1>"
+post '/nuevo/objeto' do
+	"Hola Tu nombre es: #{params[:nombre]}"
 end
