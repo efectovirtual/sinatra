@@ -1,14 +1,10 @@
 require 'sinatra'
 
-a = []
 
 get '/' do
-	a = params[:nombre]
-	if a
-		"<h3>Hola #{a}</h1>"
-	else
-		"Hola desconocido!"
-	end	
+	"Hola desconocido!"
 end
 
-
+get '/:nombre' do
+	"<h3>Hola #{params[:nombre]}</h1>"
+end
