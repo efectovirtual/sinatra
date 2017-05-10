@@ -16,5 +16,5 @@ end
 
 
 post '/nuevo/objeto' do
-	"Hola Tu nombre es: #{params[:nombre]}"
+	"¡Hola #{params[:nombre]}!"
 end
