@@ -10,12 +10,8 @@
 
 <h1>Hola</h1>
 	
-	<% 51.times do |i| %>
-		<% if (i.to_i%2) == 0 %>
-			<p><%= "#{i} Soy Par!"%></p>
-		<% else %>
-			<p><%= "#{i} Soy Impar!"%></p>
-		<% end %>
+	<% @parimpar.each do |valores|  %>	
+		<p><%= valores %></p>
 	<% end %>
 		
 </body>
