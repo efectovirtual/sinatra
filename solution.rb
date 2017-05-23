@@ -5,7 +5,8 @@ require 'sinatra'
 get '/' do
 
 	@parimpar = []
-	51.times do |i|
+	50.times do |i|
+		i += 1
 		if (i.to_i%2) == 0
 			@parimpar << "#{i} Soy Par!"
 		else
