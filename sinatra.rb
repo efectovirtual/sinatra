@@ -6,13 +6,16 @@ require 'sinatra'
 # Pares e Impares
 get '/' do
 	
-	erb :parimpar
+	51.times do |i|
+		if (i%2)==0
+			"#{i} Soy Par!"
+		else
+			"#{i} Soy Impar!"
+		end
+	end
+
+	# erb :parimpar
 end
-
-
-
-
-
 
 
 

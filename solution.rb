@@ -1,11 +1,11 @@
 require 'sinatra'
 
+
 # Pares e Impares
 get '/' do
 	
 	erb :parimpar
 end
-
 
 
 

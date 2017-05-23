@@ -11,10 +11,10 @@
 <h1>Hola</h1>
 	
 	<% 51.times do |i| %>
-		<% if i%2==0 %>
-			<h2><%= "#{i} Soy Par!"%></h2>
+		<% if (i.to_i%2) == 0 %>
+			<p><%= "#{i} Soy Par!"%></p>
 		<% else %>
-			<h2><%= "#{i} Soy Impar!"%></h2>
+			<p><%= "#{i} Soy Impar!"%></p>
 		<% end %>
 	<% end %>
 		
