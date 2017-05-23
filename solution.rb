@@ -3,8 +3,7 @@ require 'sinatra'
 
 # Pares e Impares
 get '/' do
-	
-	erb :parimpar
+  erb :parimpar
 end
 
 
