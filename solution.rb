@@ -1,17 +1,47 @@
+
 require 'sinatra'
 
-suma = 0
 
 get '/' do
-	@suma_total = suma
-	erb :sumar
+
+	erb :abuela
 end
 
-post '/' do
-	suma += 1
-	@suma_total = suma
-	erb :sumar
+post '/respuesta' do
+
+	res = params[:dialgo]
+
+	if res =~ /[A-Z]/
+		@respuesta = "Ahhh si, manzanas!"
+	else
+		@respuesta = "Habla más duro mijito"
+	end
+
+	erb :abuelarespuesta
 end
+
+
+
+
+
+
+
+
+
+# require 'sinatra'
+
+# suma = 0
+
+# get '/' do
+# 	@suma_total = suma
+# 	erb :sumar
+# end
+
+# post '/' do
+# 	suma += 1
+# 	@suma_total = suma
+# 	erb :sumar
+# end
 
 
 
