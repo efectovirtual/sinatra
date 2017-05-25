@@ -3,9 +3,8 @@ require 'sinatra'
 
 
 get '/' do
- puts request.user_agent
+  request.user_agent
 end
-
 
 # HTTP_USER_AGENT
 
