@@ -3,22 +3,39 @@ require 'sinatra'
 
 
 get '/' do
-
-	erb :abuela
+ puts request.user_agent
 end
 
-post '/respuesta' do
 
-	res = params[:dialgo]
+# HTTP_USER_AGENT
 
-	if res =~ /[A-Z]/
-		@respuesta = "Ahhh si, manzanas!"
-	else
-		@respuesta = "Habla más duro mijito"
-	end
 
-	erb :abuelarespuesta
-end
+
+
+
+
+
+
+
+
+
+# get '/' do
+
+# 	erb :abuela
+# end
+
+# post '/respuesta' do
+
+# 	res = params[:dialgo]
+
+# 	if res =~ /[A-Z]/
+# 		@respuesta = "Ahhh si, manzanas!"
+# 	else
+# 		@respuesta = "Habla más duro mijito"
+# 	end
+
+# 	erb :abuelarespuesta
+# end
 
 
 
